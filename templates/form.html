@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Welcome! </title>
+	</head>
+	
+	<body>
+		<form>
+			<h1>
+			{% if ret == None %}
+			Hi what is your name:
+			<input type="text" name="name">
+			<br>
+			<input type="submit">	
+			{% else %}
+			Hi {{ret}}, welcome to my page!
+			{% endif %}
+			</h1>
+		</form>
+	</body>
+</html>
